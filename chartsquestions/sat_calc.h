@@ -32,6 +32,7 @@ public:
 
     sat_calc();
     ~sat_calc();
+    void generate_report();
 };
 
 #endif // SAT_CALC_H

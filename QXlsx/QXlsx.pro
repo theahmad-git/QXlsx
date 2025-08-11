@@ -2,10 +2,27 @@
 
 TARGET = QXlsx
 TEMPLATE = lib
+
 CONFIG += staticlib
+TEMPLATE = lib
 QT += core
 QT += gui-private
 
+QT += axcontainer
+
+# In YOUR PROJECT'S .pro file (not QXlsx's)
+QT += core gui
+#CONFIG += c++11
+
+# Static linking configuration
+DEFINES += QXLSX_STATIC
+
+# Link to compiled QXlsx library
+LIBS += -L"E:/Inventory/Project1/QXlsx/build/release" -lQXlsx
+
+# Include paths (adjust if needed)
+INCLUDEPATH += "E:/Inventory/Project1/QXlsx/header"
+DEPENDPATH += "E:/Inventory/Project1/QXlsx/header"
 #####################################################################
 # set debug/release build environment
 #

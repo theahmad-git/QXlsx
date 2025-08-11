@@ -17,6 +17,10 @@ sat_calc::~sat_calc()
 {
 }
 
+sat_calc::~sat_calc() {
+    // cleanup if needed, or leave empty
+}
+
 void sat_calc::get_chromatogram(const QString &chromatogram)
 {
     this->chromatogram = chromatogram;
